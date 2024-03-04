@@ -16,7 +16,7 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a
+                <a className="aa"
                   target="blank"
                   href="https://pcc.police.gov.bd/ords/pcc2/r/pcc/home"
                 >
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a
+                <a className="aa"
                   target="blank"
                   href="https://mowca.gov.bd/site/forms/df4ad3fe-8faa-48e2-a039-f246a44f01f7/%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%AC%E0%A6%BE-%E0%A6%93-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%A4-%E0%A6%AD%E0%A6%BE%E0%A6%A4%E0%A6%BE-%E0%A6%86%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A6%A8-%E0%A6%AB%E0%A6%B0%E0%A6%AE-"
                 >
@@ -38,7 +38,7 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a target="blank" href="https://www.epassport.gov.bd/">
+                <a className="aa" target="blank" href="https://www.epassport.gov.bd/">
                   পাসপোর্ট
                 </a>
               </li>
@@ -48,7 +48,7 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a target="blank" href="https://bdris.gov.bd/br/application">
+                <a className="aa" target="blank" href="https://bdris.gov.bd/br/application">
                   নাগরিক সনদ
                 </a>
               </li>
@@ -56,7 +56,7 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a target="blank" href="https://bdris.gov.bd/br/application">
+                <a className="aa" target="blank" href="https://bdris.gov.bd/br/application">
                   জন্ম নিবন্ধন
                 </a>
               </li>
@@ -64,16 +64,34 @@ export default function Home() {
             <div className="col">
               {" "}
               <li className="w-50 h-100">
-                <a target="blank" href="https://www.nidw.gov.bd/">
+                <a className="aa" target="blank" href="https://www.nidw.gov.bd/">
                   জাতীয় পরিচয়পত্র
                 </a>
               </li>
             </div>
           </div>
-          <a href="/chat">go to chat</a>
+          <hr />
+          <a href="/chat">
+            <div className="gotochat rounded mt-5 d-flex justify-content-start text-white p-3">
+              <div className="col p-5">
+                <div className="row">
+                  <h2>Introducing </h2>
+                  <b>Sathi Chatbot || Go to Chat</b>
+                </div>
+              </div>
+              <div class="d-flex" style={{ height: "150px" }}>
+                <div class="vr"></div>
+              </div>
+              <div className="col p-5">
+                <b>
+                  Chat with Sathi AI Assistance. Ask for any query to get
+                  Government data in your door when you wish...
+                </b>
+              </div>
+            </div>
+          </a>
         </center>
       </div>
-      
     </div>
   );
 }

@@ -7,17 +7,28 @@ function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
+  function getAPIresponse(msg) {
+    if (msg.toLowerCase() == "hi") 
+      return "Hello! How can I help you";
+    else 
+      return "Wait for my API connection. Thank you";
+  }
+
+  function setMsg(msg) {
+    setMessages([...messages, { message: msg, isBot: false }]);
+    setTimeout(() => {
+      setMessages((messages) => [
+        ...messages,
+        { message: getAPIresponse(msg), isBot: true },
+      ]);
+    }, 500);
+  }
+
   const handleSendMessage = (e) => {
     e.preventDefault();
     const trimmedInput = input.trim();
     if (trimmedInput) {
-      setMessages([...messages, { message: trimmedInput, isBot: false }]);
-      setTimeout(() => {
-        setMessages((messages) => [
-          ...messages,
-          { message: "Wait for my API connection. Thank you", isBot: true },
-        ]);
-      }, 500); // Simulate a response delay
+      setMsg(trimmedInput);
     }
     setInput("");
   };
@@ -26,7 +37,7 @@ function Chatbot() {
     <center>
       <div className="chat_window">
         <div className="pt-1">
-        <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
+          <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
         </div>
         {messages.map((msg, index) => (
           <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />

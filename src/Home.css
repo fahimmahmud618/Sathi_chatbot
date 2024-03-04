@@ -12,6 +12,11 @@ li{
     padding-top: 10px;
     font-weight: 500;
 }  
+.gotochat{
+    background-image: linear-gradient(120deg, #1E5128, #4E9F3D);
+    width: 70%;
+    height: 200px;
+}
 li:hover{
     background-color: #4E9F3D;
 }
@@ -20,10 +25,17 @@ a {
     color: white;
   }
 
-a:hover{
+/* a:hover{
+    font-weight: bold;
+    color: white;
+} */
+
+.aa:hover{
     font-weight: bold;
     color: white;
 }
+
+
 
 .hometitle{
     font-size: x-large;

@@ -11,8 +11,8 @@ function App() {
       </center>
       <BrowserRouter>
       <Routes>
-        <Route path="/d" element={<Home/>}/>
-        <Route path="/" element={<Chatbot/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/chat" element={<Chatbot/>}/>
       </Routes>
     </BrowserRouter>
       

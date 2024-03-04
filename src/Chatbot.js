@@ -6,7 +6,7 @@ import sendpic from "./asset/send.png";
 function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  
+
   const handleSendMessage = (e) => {
     e.preventDefault();
     const trimmedInput = input.trim();
@@ -23,20 +23,14 @@ function Chatbot() {
   };
 
   return (
-    <div>
+    <center>
       <div className="chat_window">
-      <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
+        <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
         {messages.map((msg, index) => (
           <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />
         ))}
       </div>
-      <form
-        onSubmit={handleSendMessage}
-        style={{
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
+      <form onSubmit={handleSendMessage}>
         <input
           type="text"
           value={input}
@@ -51,7 +45,7 @@ function Chatbot() {
           alt="Submit"
         ></input>
       </form>
-    </div>
+    </center>
   );
 }
 

@@ -19,10 +19,10 @@
     height: auto;
     padding: 8px;
 }
-form{
+/* form{
     display: inline-block;
     align-items: center;
-}
+} */
 .profile_pic_bot{
     height: 5vh;
     width: 6vh;

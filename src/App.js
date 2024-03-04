@@ -2,25 +2,37 @@ import React from "react";
 import "./App.css";
 import Chatbot from "./Chatbot";
 import Home from "./Home";
-import { BrowserRouter,StaticRouter, Navigate, Routes, Route, Link, createBrowserRouter } from "react-router-dom";
+import logoset from "./asset/logoset.png";
+import logo from "./asset/sathi-logo.svg";
+import {
+  BrowserRouter,
+  StaticRouter,
+  Navigate,
+  Routes,
+  Route,
+  Link,
+  createBrowserRouter,
+} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <center>
-        <div className="headnav">Sathi AI</div>
-      </center>
+      <div class="headnav d-flex ps-3 pe-3">
+        <div class="p-2 w-100">
+          <img src={logo} alt="logoset" />
+        </div>
+        <div class="p-2 flex-shrink-1">
+          {" "}
+          <img className="align-content-end" src={logoset} alt="logoset" />
+        </div>
+      </div>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/chat" element={<Chatbot/>}/>
-      </Routes>
-    </BrowserRouter>
-      
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chat" element={<Chatbot />} />
+        </Routes>
+      </BrowserRouter>
 
-      <header className="App-header">
-        {/* <Home /> */}
-        
-      </header>
+      <header className="App-header">{/* <Home /> */}</header>
     </div>
   );
 }

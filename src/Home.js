@@ -70,8 +70,10 @@ export default function Home() {
               </li>
             </div>
           </div>
+          <a href="/chat">go to chat</a>
         </center>
       </div>
+      
     </div>
   );
 }

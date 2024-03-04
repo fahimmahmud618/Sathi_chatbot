@@ -13,7 +13,7 @@
 }
 
 .inputbox{
-    width: calc(60vh - 44px);
+    width: calc(60vh - 30px);
     border-radius: 6px;
     border: 1px solid black;
     height: auto;
@@ -24,14 +24,14 @@
     align-items: center;
 } */
 .profile_pic_bot{
-    height: 5vh;
-    width: 6vh;
+    height: 55px;
+    width: 60px;
     padding: 10px;
     
 }
 .profile_pic_user{
-    height: 4vh;
-    width: 4vh;
+    height: 40px;
+    width: 40px;
     padding: 10px;
     
 }

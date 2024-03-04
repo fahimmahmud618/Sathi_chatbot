@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'CharukolaUltraLight', Arial, sans-serif !important;
+  font-family: sans-serif,'CharukolaUltraLight',  Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

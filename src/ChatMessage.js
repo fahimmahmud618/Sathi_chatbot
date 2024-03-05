@@ -12,12 +12,12 @@ function ChatMessage({ message, isBot }) {
         textAlign: isBot ? "left" : "right",
       }}
     >
-      {isBot && <img className="profile_pic_bot" src={botpic} alt="Sathi"/>}
-      <p 
+      {isBot && <img className="profile_pic_bot" src={botpic} alt="Sathi" />}
+      <p
         className="chat_msg"
         style={{
-          maxWidth: "50%", // Maximum width
-          width: "auto", // Default width
+          maxWidth: "50%",
+          width: "auto",
           display: "inline-block",
           padding: "8px",
           borderRadius: "12px",
@@ -26,13 +26,13 @@ function ChatMessage({ message, isBot }) {
           backgroundImage: isBot
             ? "linear-gradient(120deg, #F7EFE5, #FFFBF5)"
             : "linear-gradient(120deg, #1E5128, #4E9F3D)",
-          textAlign: "left", // Set text alignment
+          textAlign: "left",
         }}
       >
         {message}
       </p>
 
-      {!isBot && <img className="profile_pic_user" src={userpic} alt="Me"/>}
+      {!isBot && <img className="profile_pic_user" src={userpic} alt="Me" />}
     </div>
   );
 }

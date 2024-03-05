@@ -20,8 +20,9 @@ function App() {
     <div className="App">
       <div class="headnav d-flex ps-3 pe-3">
         <div class="p-2 w-100">
-          <a href="/"><img src={logo} alt="logoset" /></a>
-          
+          <a href="/">
+            <img src={logo} alt="logoset" />
+          </a>
         </div>
         <div class="p-2 flex-shrink-1">
           {" "}

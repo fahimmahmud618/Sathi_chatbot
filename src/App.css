@@ -1,28 +1,19 @@
-.App {
-  /* text-align: center; */
-}
-
-
 .App-header {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   font-size: calc(3px + 2vmin);
-  /* color: white; */
 }
-.headnav{
+.headnav {
   border-bottom: 1px solid rgb(0, 0, 0);
-  /* background-image: linear-gradient(120deg, #1E5128, #4E9F3D); */
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: calc(12px + 2vmin);
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color:rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
 }
 
-img{
+img {
   height: 50px;
 }

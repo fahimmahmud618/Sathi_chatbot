@@ -1,73 +1,64 @@
-.chat_window{
-    border-radius: 10px;
-    border: 1px solid black; 
-    margin-bottom: 10px;
-    margin-top: 10px;
-    overflow: auto;
-    /* padding: 10px; */
-    height: 80vh;
-    width: 60vh;
-    background-color: #e2e2e2;
-    /* background-image: linear-gradient(-60deg, #99ffa3, #ffffff); */
-
+.chat_window {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: auto;
+  height: 78vh;
+  width: 60vh;
+  background-color: #e2e2e2;
 }
 
-.inputbox{
-    width: calc(60vh - 60px);
-    border-radius: 6px;
-    border: 1px solid black;
-    height: auto;
-    padding: 8px;
-}
-/* form{
-    display: inline-block;
-    align-items: center;
-} */
-.profile_pic_bot{
-    height: 55px;
-    width: 60px;
-    padding: 10px;
-    
-}
-.profile_pic_user{
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    
+.inputbox {
+  width: calc(60vh - 60px);
+  border-radius: 6px;
+  border: 1px solid black;
+  height: auto;
+  padding: 8px;
 }
 
-/* Chatbot.css */
+.profile_pic_bot {
+  height: 55px;
+  width: 60px;
+  padding: 10px;
+}
+.profile_pic_user {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
 .chat_msg {
-    max-width: 50%; /* Maximum width */
-    width: auto; /* Default width */
-    display: inline-block;
-    padding: '8px';
-    borderRadius: '12px';
-    color: inherit; /* Inherits from inline style */
-    border: inherit; /* Inherits from inline style */
-    backgroundImage: inherit; /* Inherits from inline style */
-  }
-  
-.chat_div{
-    display: flex;
-    align-items:center;
+  max-width: 50%;
+  width: auto;
+  display: inline-block;
+  padding: "8px";
+  borderradius: "12px";
+  color: inherit;
+  border: inherit;
+  backgroundimage: inherit;
+}
+
+.chat_div {
+  display: flex;
+  align-items: center;
 }
 
 .listening-popup {
-    position: absolute;
-    bottom: 60px; /* Adjust based on your layout */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    z-index: 100;
-  }
-  
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

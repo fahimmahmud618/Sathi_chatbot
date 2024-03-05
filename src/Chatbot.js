@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChatMessage from "./ChatMessage";
 import "./Chatbot.css";
 import sendpic from "./asset/send.png";
-import micpic from "./asset/mic.png"; // Import the microphone image
+import micpic from "./asset/mic.png";
 import SpeechToTextComponent from "./speech";
 
 function Chatbot() {
@@ -10,12 +10,12 @@ function Chatbot() {
   const [input, setInput] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
-  const [showPopup, setShowPopup] = useState(false); // State to manage popup visibility
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     if (transcript.trim() !== "") {
       setMsg(transcript);
-      setTranscript(""); // Reset transcript after setting the message
+      setTranscript("");
     }
   }, [transcript, setTranscript]);
 
@@ -43,10 +43,14 @@ function Chatbot() {
     }
   };
 
-  // Toggle listening and popup visibility
   const toggleListening = () => {
     setIsListening((prev) => !prev);
-    setShowPopup((prev) => !prev); // Toggle popup visibility
+    setShowPopup((prev) => !prev);
+    <SpeechToTextComponent
+      isListening={isListening}
+      onTranscriptUpdate={setTranscript}
+      onListeningChange={setIsListening}
+    />;
   };
 
   return (
@@ -60,7 +64,7 @@ function Chatbot() {
         ))}
       </div>
       <form onSubmit={handleSendMessage}>
-        <div className="icons">
+        <div className="icons pb-1">
           <input
             type="text"
             value={input}

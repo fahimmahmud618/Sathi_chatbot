@@ -13,12 +13,15 @@ import {
   Link,
   createBrowserRouter,
 } from "react-router-dom";
+import SpeechToText from "./speech";
+import SpeechToTextComponent from "./speech";
 function App() {
   return (
     <div className="App">
       <div class="headnav d-flex ps-3 pe-3">
         <div class="p-2 w-100">
-          <img src={logo} alt="logoset" />
+          <a href="/"><img src={logo} alt="logoset" /></a>
+          
         </div>
         <div class="p-2 flex-shrink-1">
           {" "}

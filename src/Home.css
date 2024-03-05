@@ -55,7 +55,7 @@ a {
     position: absolute;
 }
 .d2{
-    height:calc(100vh - 90px);
+    height:calc(100vh - 180px);
     width: 90%;
     background-color:rgb(237, 237, 237);
     position: absolute;

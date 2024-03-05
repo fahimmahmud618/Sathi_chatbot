@@ -13,7 +13,7 @@
 }
 
 .inputbox{
-    width: calc(60vh - 30px);
+    width: calc(60vh - 60px);
     border-radius: 6px;
     border: 1px solid black;
     height: auto;
@@ -51,4 +51,23 @@
 .chat_div{
     display: flex;
     align-items:center;
+}
+
+.listening-popup {
+    position: absolute;
+    bottom: 60px; /* Adjust based on your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+  
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

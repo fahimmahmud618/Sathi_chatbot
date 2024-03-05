@@ -24,6 +24,15 @@
       "react-app/jest"
     ]
   },
+  "globals": {
+    "SpeechRecognition": "readonly",
+    "webkitSpeechRecognition": "readonly"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
   "browserslist": {
     "production": [
       ">0.2%",

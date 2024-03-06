@@ -1,11 +1,13 @@
 body {
   margin: 0;
-  font-family: sans-serif,'CharukolaUltraLight',  Arial !important;
+  font-family: 'Kalpurush', 'Noto Sans Bengali',Arial, sans-serif  !important;
+  /* font-family: Noto Sans Bengali, sans-serif,  Arial !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
+/* 'CharukolaUltraLight', */

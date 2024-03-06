@@ -54,6 +54,9 @@ function Chatbot() {
   };
 
   return (
+    <div className="back">
+
+    
     <center>
       <div className="chat_window">
         <div className="pt-1">
@@ -91,6 +94,7 @@ function Chatbot() {
         </div>
       </form>
     </center>
+    </div>
   );
 }
 

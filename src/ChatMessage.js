@@ -25,7 +25,7 @@ function ChatMessage({ message, isBot }) {
           border: isBot ? "0.1px solid black" : "",
           backgroundImage: isBot
             ? "linear-gradient(120deg, #F7EFE5, #FFFBF5)"
-            : "linear-gradient(120deg, #1E5128, #4E9F3D)",
+            : "linear-gradient(120deg, #007217, #007217)",
           textAlign: "left",
         }}
       >

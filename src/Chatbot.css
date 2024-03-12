@@ -2,12 +2,12 @@
   border-radius: 10px;
   border: 1px solid black;
   margin-bottom: 15px;
-  margin-top: 10px;
+  margin-top: 8px;
   overflow: auto;
   height: 78vh;
   width: 60vh;
-  background-color: #fcf5ef;
-  background-image: url(asset/chatback.PNG);
+  background-color: #dadada;
+  /* background-image: url(asset/chatback.PNG); */
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -17,10 +17,11 @@
   background-image: url(asset/chatbackpic.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size:contain;
 }
 
 .inputbox {
+  background-color: #dadada;
   width: calc(60vh - 60px);
   border-radius: 6px;
   border: 1px solid black;

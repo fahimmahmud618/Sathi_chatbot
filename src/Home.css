@@ -1,96 +1,118 @@
-h2 {
-  font-weight: 900;
+.navbg{
+    background-color: #0F0F0F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
 }
 
-li {
-  border-radius: 10px;
-  padding: 10px;
-  background-image: linear-gradient(120deg, #1e5128, #4e9f3d);
-  margin: 10px;
-  padding-top: 10px;
-  font-weight: 500;
+.navimg{
+    height: 30px;
+    width: 30px;
 }
-.gotochat {
-  /* background-color: #ffffff; */
-  /* background-image: linear-gradient(120deg, #1e5128, #4e9f3d); */
-  width: fit-content;
-  height: fit-content;
+
+.introsec{
+    height: 475px;
+    background-color: #000000;   
 }
-li:hover {
-  background-color: #4e9f3d;
+.introsec1{
+    padding-left: 15%; 
+    padding-top: 5%; 
+}
+
+.introsec2{
+    background-image: url('./asset/comment-sathi.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
+
+.gotochatbutton{
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #017F0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.gotochatbutton:hover{
+    background-color: #005b09;
+}
+
+.sathiaitext{
+    font-size: 40px;
+}
+
+.headingseba{
+    background-color: #dadada;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .aa {
-  border-radius: 8px;
-  padding: 10px;
-  margin: 8px;
-  margin-top: 20px;
-  background-color: #ffffff;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-.aaa {
-  border-radius: 8px;
-  padding: 10px;
-  /* margin: 8px; */
-  /* margin-top: 20px; */
-  /* background-color: #ffffff; */
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px;
+    margin-top: 20px;
+    background-color: #dadada;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
-.aa:hover {
-  border: 1px solid black;
-  background-color: #f9f9f9;
-  color: rgb(0, 0, 0);
+.aa:hover{
+    background-color: #b1b1b1;
+    text-decoration: none;
+    color: black;
 }
 
-.hometitle {
-  font-size: x-large;
-  font-weight: 900;
-  color: rgb(0, 0, 0);
-}
-.bodyhome {
-  background-color: rgb(237, 237, 237);
-  display: flex;
-  justify-content: center;
+.space{
+    height: 75px;
 }
 
-.d1 {
-  height: 200px;
-  width: 100%;
-  background-color: #007217;
-  position: absolute;
-}
-.d2 {
-  height: calc(100vh - 180px);
-  width: 90%;
-  /* background-color: #fbf6f2; */
-  /* background-color: #e2f1e8; */
-  background-image: url(./asset/slider.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  position: absolute;
-  transform: translateY(90px);
+.sebalogos{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
-.first_section{
-  background-color: #e2f1e8;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.286);
-  border-radius: 8px;
+.footersec{
+    padding: 20px;
+    height: 150px;
+    background-color: #dadada;
+    border-top: 1px solid black;
 }
-.second_section{
-  background-image: linear-gradient(120deg, #fcf7f3, #f6fcfc);
+
+.ekshhoplogo{
+    height: 50px;
+    width: 170px;
 }
-.logoicon{
-  height: 40px;
-  width: 60px; 
+
+.c1{
+    padding-left: 30px;
+    margin-top: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
-.logoicon1{
-  height: 40px;
-  width: 40px; 
-  margin-bottom: 10px;
+
+.logoset{
+    height: 50px;
+}
+
+.ekslogo{
+    border-right: 1px solid black;
 }

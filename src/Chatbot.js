@@ -4,6 +4,7 @@ import "./Chatbot.css";
 import sendpic from "./asset/send.png";
 import micpic from "./asset/mic.png";
 import SpeechToTextComponent from "./speech";
+import Navbar from "./Navbar";
 
 function Chatbot() {
   const [messages, setMessages] = useState([]);
@@ -56,7 +57,7 @@ function Chatbot() {
   return (
     <div className="back">
 
-    
+    <Navbar/>
     <center>
       <div className="chat_window">
         <div className="pt-1">

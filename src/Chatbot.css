@@ -5,8 +5,8 @@
   margin-top: 8px;
   overflow: auto;
   height: 78vh;
-  width: 60vh;
-  background-color: #dadada;
+  width: 75vh;
+  background-color: #f3efef;
   /* background-image: url(asset/chatback.PNG); */
   background-repeat: no-repeat;
   background-position: bottom;
@@ -21,8 +21,8 @@
 }
 
 .inputbox {
-  background-color: #dadada;
-  width: calc(60vh - 60px);
+  background-color: #f3efef;
+  width: calc(75vh - 60px);
   border-radius: 6px;
   border: 1px solid black;
   height: auto;

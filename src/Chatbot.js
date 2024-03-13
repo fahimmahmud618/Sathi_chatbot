@@ -68,7 +68,7 @@ function Chatbot() {
       <center>
         <div className="chat_window">
           <div className="pt-1">
-            <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
+            <ChatMessage key={1} message="Hello ! How can I help you today?" isBot={true} />
           </div>
           {messages.map((msg, index) => (
             <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />

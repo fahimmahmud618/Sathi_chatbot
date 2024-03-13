@@ -1,3 +1,4 @@
+// Import the new ChatMessage component
 import React from "react";
 import botpic from "./asset/botpic.png";
 import userpic from "./asset/user.png";

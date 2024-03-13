@@ -4,12 +4,10 @@ import "./Chatbot.css";
 import sendpic from "./asset/send.png";
 import micpic from "./asset/mic.png";
 import SpeechToTextComponent from "./speech";
-import axios from "axios";
+import Navbar from "./Navbar"; // Import Navbar component if it's not already imported
 
 function Chatbot() {
-  const [messages, setMessages] = useState([
-    { message: "Hello, how can I assist you today?", isBot: true }
-  ]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
@@ -39,9 +37,7 @@ function Chatbot() {
   }
 
   function setMsg(msg) {
-    const newMessages = [...messages, { message: msg, isBot: false }];
-    setMessages(newMessages);
-    // Optional: You can save the messages to localStorage or a database here
+    setMessages([...messages, { message: msg, isBot: false }]);
     setTimeout(() => {
       getAPIresponse(msg);
     }, 500);
@@ -68,8 +64,12 @@ function Chatbot() {
 
   return (
     <div className="back">
+      <Navbar /> {/* Render Navbar component */}
       <center>
         <div className="chat_window">
+          <div className="pt-1">
+            <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
+          </div>
           {messages.map((msg, index) => (
             <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />
           ))}

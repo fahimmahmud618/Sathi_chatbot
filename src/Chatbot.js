@@ -5,7 +5,7 @@ import sendpic from "./asset/send.png";
 import micpic from "./asset/mic.png";
 import SpeechToTextComponent from "./speech";
 import Navbar from "./Navbar"; // Import Navbar component if it's not already imported
-
+import axios from "axios";
 function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");

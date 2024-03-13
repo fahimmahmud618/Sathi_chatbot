@@ -8,6 +8,10 @@
 }
 
 .navimg{
+    /* height: 50px; */
+    width: 50px;
+}
+.navimg2{
     height: 30px;
     width: 30px;
 }
@@ -22,7 +26,7 @@
 }
 
 .introsec2{
-    background-image: url('./asset/comment-sathi.png');
+    background-image: url('./asset/noipunno-new-logo.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size:contain;
@@ -35,14 +39,14 @@ a{
     margin-top: 10px;
     height: 40px;
     width: 100px;
-    background-color: #017F0E;
+    background-color: #B7248E;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
 .gotochatbutton:hover{
-    background-color: #005b09;
+    background-color: #a7107c;
 }
 
 .sathiaitext{

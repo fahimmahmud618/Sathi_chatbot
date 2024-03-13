@@ -28,9 +28,9 @@ export default function Home() {
       <Navbar/>
       <div className="row introsec">
         <div class="col-6 introsec1 text-white">
-          <div className="row sathiaitext">সাথী এআই</div>
+          <div className="row sathiaitext">নৈপুণ্য এআই</div>
           <div className="row">
-            সরকারি সেবা এখন হাতের মুঠোতে। নিজের ভাষায় সাথীর সাথে চ্যাট করুন এবং
+          নৈপুণ্য সেবা এখন হাতের মুঠোতে। নিজের ভাষায় নৈপুণ্য এআই এর সাথে চ্যাট করুন এবং
             প্রয়োজনীয় সেবা গ্রহন করুন
           </div>
           <div className="row">

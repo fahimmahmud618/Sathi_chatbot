@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ChatMessage from "./ChatMessage";
 import "./Chatbot.css";
-import sendpic from "./asset/send.png";
-import micpic from "./asset/mic.png";
+import sendpic from "./asset/icons8-send-48.png";
+import micpic from "./asset/icons8-mic-48.png";
 import SpeechToTextComponent from "./speech";
 import Navbar from "./Navbar";
 
@@ -87,6 +87,7 @@ function Chatbot() {
             <div className="listening-popup">Listening, Speak now</div>
           )}
           <input
+          className="send-icon ps-1"
             style={{ paddingLeft: "4px" }}
             type="image"
             src={sendpic}

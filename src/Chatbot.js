@@ -55,6 +55,7 @@ function Chatbot() {
   };
 
   return (
+    <>
     <div className="back">
 
     <Navbar/>
@@ -64,7 +65,7 @@ function Chatbot() {
           <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
         </div>
         {messages.map((msg, index) => (
-          <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />
+          <ChatMessage key={index} message={msg.message} isBot={msg.isBot} timestamp={"10:38 am"}/>
         ))}
       </div>
       <form onSubmit={handleSendMessage}>
@@ -97,6 +98,7 @@ function Chatbot() {
       </form>
     </center>
     </div>
+    </>
   );
 }
 

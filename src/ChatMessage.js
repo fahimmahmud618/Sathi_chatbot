@@ -2,10 +2,12 @@ import React from "react";
 import "./Chatbot.css";
 import botpic from "./asset/icons8-assistant-64.png";
 import userpic from "./asset/icons8-user-48 (1).png";
+import Clock from "./Clock";
 
 function ChatMessage({ message, isBot }) {
   return (
     <>
+    
       <div
         className="chat_div"
         style={{
@@ -31,8 +33,8 @@ function ChatMessage({ message, isBot }) {
           }}
         >
           {message}
-        </p>
-        {/* {!isBot && <p className="time">10:38 am</p>} */}
+        </p> 
+        {!isBot && <Clock/>}
 
         {!isBot && <img className="profile_pic_user" src={userpic} alt="Me" />}
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './Chatbot.css'
 function Clock() {
   const [time, setTime] = useState(new Date());
 
@@ -18,7 +18,7 @@ function Clock() {
     hour12: true
   });
 
-  return <div>{timeString}</div>;
+  return <div className='time'>{timeString}</div>;
 }
 
 export default Clock;

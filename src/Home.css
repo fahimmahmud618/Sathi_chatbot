@@ -1,118 +1,135 @@
 .navbg{
-  background-color: #0F0F0F;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75px;
+    background-color: #0F0F0F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    
 }
 
 .navimg{
-  height: 30px;
-  width: 30px;
+    /* height: 50px; */
+    width: 50px;
+}
+.navimg2{
+    height: 30px;
+    width: 30px;
 }
 
-.introsec{
-  height: 475px;
-  background-color: #000000;   
+.introsec {
+    min-height: calc(100vh - 150px); /* Adjusted height based on the footer height */
+    background-color: #000000;   
 }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    position: fixed; /* Ensuring the footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Your other CSS styles remain unchanged */
+
 .introsec1{
-  padding-left: 15%; 
-  padding-top: 5%; 
+    padding-left: 15%; 
+    padding-top: 5%; 
 }
 
 .introsec2{
-  background-image: url('./asset/comment-sathi.png');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size:contain;
+    background-image: url('./asset/noipunno-new-logo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:contain;
+    display: flex;
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .gotochatbutton{
-  margin-top: 10px;
-  height: 40px;
-  width: 100px;
-  background-color: #017F0E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #B7248E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 .gotochatbutton:hover{
-  background-color: #005b09;
+    background-color: #a7107c;
 }
 
 .sathiaitext{
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .headingseba{
-  background-color: #dadada;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #dadada;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .aa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 8px;
-  margin-top: 20px;
-  background-color: #dadada;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px;
+    margin-top: 20px;
+    background-color: #dadada;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .aa:hover{
-  background-color: #b1b1b1;
-  text-decoration: none;
-  color: black;
+    background-color: #b1b1b1;
+    text-decoration: none;
+    color: black;
 }
 
-.space{
-  height: 75px;
-}
+
 
 .sebalogos{
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 .footersec{
-  padding: 20px;
-  height: 150px;
-  background-color: #dadada;
-  border-top: 1px solid black;
+    padding: 20px;
+    height: 150px;
+    background-color: #dadada;
+    border-top: 1px solid black;
 }
 
 .ekshhoplogo{
-  height: 50px;
-  width: 170px;
+    height: 50px;
+    width: 170px;
 }
 
 .c1{
-  padding-left: 30px;
-  margin-top: 30px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+    padding-left: 30px;
+    margin-top: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .logoset{
-  height: 50px;
+    height: 50px;
 }
 
 .ekslogo{
-  border-right: 1px solid black;
+    border-right: 1px solid black;
 }

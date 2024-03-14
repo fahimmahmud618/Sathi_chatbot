@@ -1,41 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ChatMessage from "./ChatMessage";
 import "./Chatbot.css";
-import sendpic from "./asset/send.png";
-import micpic from "./asset/mic.png";
+import sendpic from "./asset/icons8-send-48.png";
+import micpic from "./asset/icons8-mic-48.png";
 import SpeechToTextComponent from "./speech";
-import Navbar from "./Navbar"; // Import Navbar component if it's not already imported
+import Navbar from "./Navbar";
 import axios from "axios";
+
 function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [showPopup, setShowPopup] = useState(false);
+  const chatWindowRef = useRef(null);
 
   useEffect(() => {
-    if (transcript.trim() !== "") {
-      setMsg(transcript);
-      setTranscript("");
-    }
-  }, [transcript, setTranscript]);
+    // Scroll to the bottom of the chat window whenever messages change
+    chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+  }, [messages]);
 
+  // Function to handle sending messages to the backend API
   function getAPIresponse(msg) {
-    axios.post("http://localhost:5000/api/chatbot", { message: msg })
-      .then(response => {
+    axios
+      .post("http://localhost:5000/api/chatbot", { message: msg })
+      .then((response) => {
         const newMessages = [
           ...messages,
           { message: msg, isBot: false },
-          { message: response.data.message, isBot: true }
+          { message: response.data.message, isBot: true },
         ];
         setMessages(newMessages);
-        // Optional: You can save the messages to localStorage or a database here
       })
-      .catch(error => {
-        console.error('Error fetching response from backend:', error);
+      .catch((error) => {
+        console.error("Error fetching response from backend:", error);
       });
   }
 
+  // Function to handle user input and sending messages
   function setMsg(msg) {
     setMessages([...messages, { message: msg, isBot: false }]);
     setTimeout(() => {
@@ -64,11 +66,15 @@ function Chatbot() {
 
   return (
     <div className="back">
-      <Navbar /> {/* Render Navbar component */}
+      <Navbar />
       <center>
-        <div className="chat_window">
+        <div className="chat_window" ref={chatWindowRef}>
           <div className="pt-1">
-            <ChatMessage key={1} message="Hello ! How can I help you today?" isBot={true} />
+            <ChatMessage
+              key={1}
+              message="Hello! How can I help you today?"
+              isBot={true}
+            />
           </div>
           {messages.map((msg, index) => (
             <ChatMessage key={index} message={msg.message} isBot={msg.isBot} />
@@ -93,12 +99,9 @@ function Chatbot() {
             {showPopup && (
               <div className="listening-popup">Listening, Speak now</div>
             )}
-            <input
-              style={{ paddingLeft: "4px" }}
-              type="image"
-              src={sendpic}
-              alt="Submit"
-            />
+            <button type="submit" className="send-icon ps-1">
+              <img src={sendpic} alt="Submit" />
+            </button>
           </div>
         </form>
       </center>

@@ -1,7 +1,8 @@
-// Import the new ChatMessage component
 import React from "react";
-import botpic from "./asset/botpic.png";
-import userpic from "./asset/user.png";
+import "./Chatbot.css";
+import botpic from "./asset/icons8-assistant-64.png";
+import userpic from "./asset/icons8-user-48 (1).png";
+import Clock from "./Clock";
 
 function ChatMessage({ message, isBot }) {
   // Function to parse message content
@@ -40,6 +41,10 @@ function ChatMessage({ message, isBot }) {
         dangerouslySetInnerHTML={parseMessage(message)}
       ></p>
 
+      {/* Move clock component below the message */}
+      <div className="clock_wrapper">
+        {!isBot && <Clock />}
+      </div>
       {!isBot && <img className="profile_pic_user" src={userpic} alt="Me" />}
     </div>
   );

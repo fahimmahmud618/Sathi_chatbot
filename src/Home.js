@@ -28,9 +28,9 @@ export default function Home() {
       <Navbar/>
       <div className="row introsec">
         <div class="col-6 introsec1 text-white">
-          <div className="row sathiaitext">সাথী এআই</div>
+          <div className="row sathiaitext">নৈপুণ্য এআই</div>
           <div className="row">
-            সরকারি সেবা এখন হাতের মুঠোতে। নিজের ভাষায় সাথীর সাথে চ্যাট করুন এবং
+          নৈপুণ্য সেবা এখন হাতের মুঠোতে। নিজের ভাষায় নৈপুণ্য এআই এর সাথে চ্যাট করুন এবং
             প্রয়োজনীয় সেবা গ্রহন করুন
           </div>
           <div className="row">
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div class="col-6 introsec2 text-white"></div>
       </div>
-      <div className="row headingseba">গুরুত্বপুর্ণ নাগরিক সেবা</div>
+      {/* <div className="row headingseba">গুরুত্বপুর্ণ নাগরিক সেবা</div>
       <div className="row justify-content-md-center">
         <a
           className="col-1 aa"
@@ -94,9 +94,9 @@ export default function Home() {
         <img className="sebalogos" src={pnid} alt="" />
           জাতীয় পরিচয়পত্র
         </a>
-      </div>
-      <div className="space"></div>
-      <div className="row headingseba">সকল স্মার্ট সেবা</div>
+      </div> */}
+      {/* <div className="space"></div> */}
+      {/* <div className="row headingseba">সকল স্মার্ট সেবা</div>
       <div className="row justify-content-md-center">
         <a className="col-1 aa" target="blank" href="">
           <img className="sebalogos" src={pmygov} alt="" />
@@ -127,7 +127,7 @@ export default function Home() {
           <img className="sebalogos" src={pmuktopath} alt="" />
           মুক্তপাঠ
         </a>
-      </div>
+      </div> */}
       <div className="space"></div>
       <div className="footer">
         <div className="footersec row">

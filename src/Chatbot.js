@@ -60,16 +60,17 @@ function Chatbot() {
 
     <Navbar/>
     <center>
-      <div className="chat_window">
+      <div className="chat_window" >
         <div className="pt-1">
           <ChatMessage key={1} message="Hey, What's up!" isBot={true} />
         </div>
         {messages.map((msg, index) => (
           <ChatMessage key={index} message={msg.message} isBot={msg.isBot} timestamp={"10:38 am"}/>
         ))}
+      
       </div>
-      <form onSubmit={handleSendMessage}>
-        <div className="icons pb-1">
+      <form className="sends" onSubmit={handleSendMessage}>
+        <div className="icons">
           <input
             type="text"
             value={input}
@@ -80,7 +81,7 @@ function Chatbot() {
           <img
             src={micpic}
             alt="Mic"
-            className="mic-icon ps-1"
+            className="mic-icon"
             onClick={toggleListening}
             style={{ cursor: "pointer", width: "24px", height: "24px" }}
           />
@@ -88,8 +89,7 @@ function Chatbot() {
             <div className="listening-popup">Listening, Speak now</div>
           )}
           <input
-          className="send-icon ps-1"
-            style={{ paddingLeft: "4px" }}
+          className="send-icon"
             type="image"
             src={sendpic}
             alt="Submit"

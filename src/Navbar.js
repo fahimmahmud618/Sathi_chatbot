@@ -4,7 +4,7 @@ import userwhite from "./asset/userwhite.png";
 import './Home.css';
 export default function Navbar() {
   return (
-    <div class="navbg row p-2">
+    <div class="navbg row">
         <div class="col-1">
         <a href="\">          <img className="ms-4 navimg" src={logo} alt="" />
 </a>

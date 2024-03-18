@@ -24,7 +24,7 @@ export default function Home() {
     alert("The div was clicked!");
   };
   return (
-    <>
+    <div className="back2">
       <Navbar/>
       <div className="row introsec pb-4">
         <div class="col-6 introsec1 text-white">
@@ -62,6 +62,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

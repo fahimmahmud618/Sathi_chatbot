@@ -5,8 +5,14 @@
     justify-content: center;
     align-items: center;
     height: 10vh;
+    width: 100%;
 }
 
+.back2{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
 .navimg{
     width: 10vh;
     height: auto;
@@ -20,6 +26,7 @@
     min-height: 65vh;
     height:max-content;
     background-color: #000000;   
+    /* width: 100%; */
 }
 .introsec1{
     padding-left: 15%; 
@@ -86,6 +93,7 @@ a{
 
 .space{
     height: 5vh;
+    /* width: 100%; */
 }
 
 .sebalogos{
@@ -95,6 +103,7 @@ a{
 }
 
 .footersec{
+    /* width: 100%; */
     padding: 3vh;
     max-height: 30vh;
     background-color: #dadada;

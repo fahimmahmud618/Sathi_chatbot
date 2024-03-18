@@ -4,20 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+    height: 10vh;
 }
 
 .navimg{
-    /* height: 50px; */
-    width: 50px;
+    width: 10vh;
+    height: auto;
 }
 .navimg2{
-    height: 30px;
-    width: 30px;
+    height: auto;
+    width: 3vh;
 }
 
 .introsec{
-    height: 475px;
+    min-height: 65vh;
+    height:max-content;
     background-color: #000000;   
 }
 .introsec1{
@@ -28,7 +29,7 @@
 .introsec2{
     background-image: url('./asset/noipunno-new-logo.svg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:top;
     background-size:contain;
 }
 a{
@@ -84,7 +85,7 @@ a{
 }
 
 .space{
-    height: 75px;
+    height: 5vh;
 }
 
 .sebalogos{
@@ -94,29 +95,34 @@ a{
 }
 
 .footersec{
-    padding: 20px;
-    height: 150px;
+    padding: 3vh;
+    max-height: 30vh;
     background-color: #dadada;
     border-top: 1px solid black;
 }
 
 .ekshhoplogo{
-    height: 50px;
-    width: 170px;
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    max-width: 170px;
 }
 
 .c1{
+    border-right: 1px solid black;
     padding-left: 30px;
     margin-top: 30px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+}
+.c2{
+    padding-left: 30px;
+    margin-top: 30px;
 }
 
 .logoset{
-    height: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .ekslogo{
-    border-right: 1px solid black;
+    
 }

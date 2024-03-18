@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div class="navbg row p-2">
         <div class="col-1">
-        <a href="\">          <img className="navimg" src={logo} alt="" />
+        <a href="\">          <img className="ms-4 navimg" src={logo} alt="" />
 </a>
         </div>
         <div class="col-9"></div>
